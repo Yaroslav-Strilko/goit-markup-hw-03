@@ -16,7 +16,7 @@
   --white: #ffffff;
   --title-color: #ffffff;
   --button-color: #188ce8;
-  --primary-color-grey:#AFB1B8; 
+  --primary-color-grey: #afb1b8;
 }
 
 /* Скидаємо налаштування від браузера */
@@ -25,6 +25,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -53,10 +55,6 @@ img {
 button {
   cursor: pointer;
 }
-section{
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 /* Задаемо основні параметри сторінки */
 body {
   font-size: 16px;
@@ -64,37 +62,54 @@ body {
   color: var(--primary-text-color);
   font-family: var(--primary-font);
 }
+/* =============приховуємо заголовки============= */
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 /* ==========COMPONENTS================== */
 /* Задаємо основні параметри контейнеру */
 .page {
   background: var(--white: );
+  width: 1600px;
 }
 
 .container {
-  width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 215px;
-  padding-left: 215px;
+  width: 1200px;
+  margin-right: 200px;
+  margin-left: 200px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .section-standard {
-    /* margin-top: 94px; */
-    }
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* margin-top: 94px; */
+}
 
-  /* ==========HEADER================== */
+/* ==========HEADER================== */
 
 .page-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-    height: 80px;
+  height: 80px;
   background-color: var(--white);
+  border: ;
 }
 .page-navigation {
   display: flex;
   align-items: center;
 }
-  .contact {
+.contact {
   display: flex;
   align-items: center;
   column-gap: 50px;
@@ -173,6 +188,7 @@ body {
   background-color: var(--button-color);
 }
 .button-text {
+  border: 0;
   margin-top: 30px;
   font-family: var(--primary-font);
   font-weight: 700;
@@ -187,7 +203,7 @@ body {
 }
 /* ==========Наші переваги================= */
 .section-our-advantages {
-  height: 286px;
+  height: 98px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,8 +212,8 @@ body {
 }
 .section-text {
   display: flex;
- flex-wrap: wrap;
- gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
   /* justify-content: space-between; */
 
   width: 1170px;
@@ -210,9 +226,9 @@ body {
 .content-our-advantages {
   display: flex;
   flex-direction: column;
-   /* flex-basis: calc((100%-90)/4);  */
-      width: 270px; 
-   }
+  /* flex-basis: calc((100%-90)/4);  */
+  width: 270px;
+}
 
 .bgc-advantages {
   display: flex;
@@ -244,6 +260,10 @@ body {
 }
 
 /* ==========Чим ми займаємося================= */
+.section-standard.about {
+  padding-top: 0;
+}
+
 .section-our-work {
   height: 386px;
   display: flex;
@@ -262,7 +282,6 @@ body {
 }
 
 .list-our-work {
-
   display: flex;
   align-items: center;
   gap: 30px;
@@ -270,16 +289,18 @@ body {
 
 /* ============ Наша команда  ==================*/
 .section-our-advant {
-  height: 708px;
+  height: 648px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--background-color-grey);
 }
-.employee{
+
+
+.employee {
   background-color: var(--white);
-height: 428px;
+  height: 428px;
 }
 
 .item-our-advant {
@@ -288,23 +309,22 @@ height: 428px;
   gap: 30px;
 }
 
-.social-links{
+.social-links {
   margin-top: 16px;
-display: flex;
-align-items: center;
-justify-content: center;
-
-gap: 10px;
-
-}
-.social-links-content{
   display: flex;
   align-items: center;
   justify-content: center;
-   /* flex-basis: calc((100%-30)/4); */
 
-  width: 44px;  
- height: 44px; 
+  gap: 10px;
+}
+.social-links-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-basis: calc((100%-30)/4); */
+
+  width: 44px;
+  height: 44px;
 }
 .social-button:hover,
 .social-button:focus {
@@ -328,28 +348,26 @@ gap: 10px;
 }
 
 /* ====Постійні клієнті===== */
-.client{
+.client {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-.client-item{
-   width: 170px;
+.client-item {
+  width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
-border-radius: 4px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-
-
 }
 
-.client list{
- }
+.client list {
+}
 
 .client-link:hover,
 .client-link:focus {
@@ -361,15 +379,17 @@ display: flex;
 }
 /* -------------------- */
 .portfolio-title {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
-.portfolio-work-cat{
-  margin-top: 4px;
+.portfolio-work-cat {
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 .portfolio_cat {
   font-weight: 400;
@@ -379,24 +399,22 @@ display: flex;
 
 .address {
   font-style: normal;
-  
-
 }
 
 .footer {
   display: flex;
- flex-direction: column;
- 
-  height: 252px;
+  flex-direction: column;
+padding-top: 60px;
+padding-bottom: 60px;
+  
   background-color: var(--footer-background-color);
 }
-.logo-footer{
-   font-family: var(--logo-font);
+.logo-footer {
+  font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
- padding-top: 60px;
-
+  
 }
 /*  */
 .footer-contact,
@@ -419,15 +437,14 @@ display: flex;
   color: var(--accent-color);
 }
 
-
 /* Блок портфоліо */
-.menu-portfolio{
-display: flex;
-justify-content: center;
-margin-bottom: 50px;
-gap: 8px;
+.menu-portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
 }
-.work-portfolio{
+.work-portfolio {
   display: flex;
   /* Make a flex container multiline */
   flex-wrap: wrap;
@@ -435,6 +452,9 @@ gap: 8px;
   gap: 30px;
   padding: 0;
   list-style: none;
+}
+.work-portfolio-img{
+  flex-basis: calc((100%-60)/3);
 
 }
 /* Кнопка */
@@ -444,6 +464,8 @@ gap: 8px;
   background-color: var(--accent-color);
 }
 .portfolio-button-text {
+  padding: 0;
+  border: 0;
   font-family: var(--primary-font);
   font-style: normal;
   text-align: center;

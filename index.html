@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
@@ -58,7 +57,7 @@
     <!-- Головна частина-->
     <main>
       <!-- Ефективні рішення-->
-      <section>
+      <section class="main-section">
         <div class="container main-section">
           <h1 class="title-first">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button button-text">
@@ -66,7 +65,241 @@
           </button>
         </div>
       </section>
+      <!-- ====Наші переваги==== -->
       <section class="section-standard">
+        <h2 visually-hidden>Наші переваги</h2>
+        <div class="container section-our-advantages">
+          <ul class="list section-text">
+            <li class="content-our-advantages">
+              <h3 class="section-title-third">УВАГА дО ДЕТАЛЕЙ</h3>
+              <p>
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="content-our-advantages">
+              <h3 class="section-title-third">ПУНКТУАЛЬНІСТЬ</h3>
+              <p>
+                авдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="content-our-advantages">
+              <h3 class="section-title-third">ПЛАНУВАННЯ</h3>
+              <p>
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="content-our-advantages">
+              <h3 class="section-title-third">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p>
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Чим ми займаємося-->
+      <section class="about section-standard">
+        <div class="container section-our-work">
+          <h2 class="section-title-second">Чим ми займаємося</h2>
+          <ul class="list list-our-work">
+            <li>
+              <img
+                src="./images/img1_1.jpg"
+                alt="Розробка алгоритмів програмування"
+                width="370"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img1_2.jpg"
+                alt="Розробка для мобільних пристроїв"
+                width="370"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img1_3.jpg"
+                alt="розробка графічних елементів"
+                width="370"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Наша команда-->
+      <section class="section-standard section-our-advant">
+        <div class="container">
+                      <h2 class="section-title-second">Наша команда</h2>
+        
+          <ul class="list item-our-advant">
+            
+            <li class="employee">
+              <img
+                src="./images/img2_1.jpg"
+                alt="фото Ігор Дем'яненко "
+                width="270"
+              />
+              <div>
+              <h3 class="our-advant">Ігор Дем'яненко</h3>
+              <p class="our-advant-text" lang="en">Product Designer</p>
+              </div>
+              <!-- <ul class="list social-links">
+                <li>
+                  <p class="social-links-content">
+                    <button type="button" class="social-button">
+                      <img
+                        src="./images/Vector_inst.svg"
+                        alt="Інстаграм"
+                        width="20"
+                      />
+                    </button>
+                  </p>
+                </li>
+                <li>
+                  <p class="social-links-content">
+                    <img src="./images/Vector_tw.svg" alt="Твітер" width="20" />
+                  </p>
+                </li>
+
+                <li>
+                  <p class="social-links-content">
+                    <img
+                      src="./images/Vector_f.svg"
+                      alt="Фейсбук"
+                      width="20"
+                      height="20"
+                    />
+                  </p>
+                </li>
+                <li>
+                  <p class="social-links-content">
+                    <img
+                      src="./images/Vector_in.svg"
+                      alt="Інкедін"
+                      width="20"
+                    />
+                  </p>
+                </li>
+              </ul> -->
+            </li>
+            <li class="employee">
+              <img
+                src="./images/img2_2.jpg"
+                alt="фото Ольга Рєпіна"
+                width="270"
+              />
+              <h3 class="our-advant">Ольга Рєпіна</h3>
+              <p class="our-advant-text" lang="en">Frontend Developer</p>
+            </li>
+            <li class="employee">
+              <img
+                src="./images/img2_3.jpg"
+                alt="фото Микола Тарасов"
+                width="270"
+              />
+              <h3 class="our-advant">Микола Тарасов</h3>
+              <p class="our-advant-text" lang="en">Marketing</p>
+            </li>
+            <li class="employee">
+              <img
+                src="./images/img2_4.jpg"
+                alt="фото Михайло Єрмаков"
+                width="270"
+              />
+              <h3 class="our-advant">Михайло Єрмаков</h3>
+              <p class="our-advant-text" lang="en">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- - Постійні клієнті-->
+      <!--       
+      <section class="section-standard">
+        <div class="container section-our-work">
+          <h2 class="section-title-second">Постійні клієнти</h2>
+
+          <ul class="client list">
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_1.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_2.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_3.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_4_b.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_5.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_6.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+    </main>
+    <!-- Підвал сайту-->
+    <footer class="footer ">
+      <div class="container">
+      <p class="logo-footer">
+        <a href="/" class="logo-footer link">
+          <span style="color: #2196f3">Web</span
+          ><span style="color: #ffffff">Studio</span>
+        </a>
+      </p>
+
+      <!-- Контакти-->
+
+      <address class="address">
+        <ul class="list">
+          <li>
+            <a
+              class="link footer-contact-map"
+              href="https://goo.gl/maps/9zsEXNPoQWwBSvTj9"
+              target="_blank"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+          </li>
+          <li>
+            <a class="link footer-contact" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link footer-contact" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- <section class="section-standard">
         <h2 hidden>Наші переваги</h2>
         <div class="container section-our-advantages">
           <ul class="list section-text">
@@ -127,197 +360,4 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- Чим ми займаємося-->
-      <section class="section-standard">
-        <div class="container section-our-work">
-          <h2 class="section-title-second">Чим ми займаємося</h2>
-          <ul class="list list-our-work">
-            <li>
-              <img
-                src="./images/img1_1.jpg"
-                alt="Розробка алгоритмів програмування"
-                width="370"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/img1_2.jpg"
-                alt="Розробка для мобільних пристроїв"
-                width="370"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/img1_3.jpg"
-                alt="розробка графічних елементів"
-                width="370"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- Наша команда-->
-      <section class="section-standard">
-        <div class="container section-our-advant">
-          <h2 class="section-title-second">Наша команда</h2>
-          <ul class="list item-our-advant">
-            <li class="employee">
-              <img
-                src="./images/img2_1.jpg"
-                alt="фото Ігор Дем'яненко "
-                width="270"
-              />
-              <h3 class="our-advant">Ігор Дем'яненко</h3>
-              <p class="our-advant-text" lang="en">Product Designer</p>
-              <ul class="list social-links">
-                <li>
-                  <p class="social-links-content">
-                    <button type="button" class="social-button">
-                      <img
-                        src="./images/Vector_inst.svg"
-                        alt="Інстаграм"
-                        width="20"
-                      />
-                    </button>
-                  </p>
-                </li>
-                <li>
-                  <p class="social-links-content">
-                    <img src="./images/Vector_tw.svg" alt="Твітер" width="20" />
-                  </p>
-                </li>
-
-                <li>
-                  <p class="social-links-content">
-                    <img
-                      src="./images/Vector_f.svg"
-                      alt="Фейсбук"
-                      width="20"
-                      height="20"
-                    />
-                  </p>
-                </li>
-                <li>
-                  <p class="social-links-content">
-                    <img
-                      src="./images/Vector_in.svg"
-                      alt="Інкедін"
-                      width="20"
-                    />
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li class="employee">
-              <img
-                src="./images/img2_2.jpg"
-                alt="фото Ольга Рєпіна"
-                width="270"
-              />
-              <h3 class="our-advant">Ольга Рєпіна</h3>
-              <p class="our-advant-text" lang="en">Frontend Developer</p>
-            </li>
-            <li class="employee">
-              <img
-                src="./images/img2_3.jpg"
-                alt="фото Микола Тарасов"
-                width="270"
-              />
-              <h3 class="our-advant">Микола Тарасов</h3>
-              <p class="our-advant-text" lang="en">Marketing</p>
-            </li>
-            <li class="employee">
-              <img
-                src="./images/img2_4.jpg"
-                alt="фото Михайло Єрмаков"
-                width="270"
-              />
-              <h3 class="our-advant">Михайло Єрмаков</h3>
-              <p class="our-advant-text" lang="en">UI Designer</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- - Постійні клієнті-->
-      <section class="section-standard">
-        <div class="container section-our-work">
-          <h2 class="section-title-second">Постійні клієнти</h2>
-
-          <ul class="client list">
-            <li class="client-item">
-              <a class="client-link link" href=""
-                ><img src="./images/logo_1.svg" alt="Клієнт Union" width=""
-              /></a>
-            </li>
-
-            <li class="client-item">
-              <a class="client-link link" href=""
-                ><img src="./images/logo_2.svg" alt="Клієнт Union" width=""
-              /></a>
-            </li>
-
-            <li class="client-item">
-              <a class="client-link link" href=""
-                ><img src="./images/logo_3.svg" alt="Клієнт Union" width=""
-              /></a>
-            </li>
-            <li class="client-item">
-              <a class="client-link link" href=""
-                ><img src="./images/logo_4_b.svg" alt="Клієнт Union" width=""
-              /></a>
-            </li>
-
-            <li class="client-item">
-              <a class="client-link link" href=""
-                ><img src="./images/logo_5.svg" alt="Клієнт Union" width=""
-              /></a>
-            </li>
-            <li class="client-item">
-              <a class="client-link link" href=""
-                ><img src="./images/logo_6.svg" alt="Клієнт Union" width=""
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <!-- Підвал сайту-->
-    <footer class="footer container">
-      
-      <p class="logo-footer">
-        <a href="/" class="logo-footer link">
-          <span style="color: #2196f3">Web</span
-          ><span style="color: #ffffff">Studio</span>
-        </a>
-      </p>
-
-      <!-- Контакти-->
-     
-      <address class="address">
-        <ul class="list">
-          <li>
-            <a
-              class="link footer-contact-map"
-              href="https://goo.gl/maps/9zsEXNPoQWwBSvTj9"
-              target="_blank"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="link footer-contact" href="mailto:info@devstudio.com">
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link footer-contact" href="tel:+380961111111">
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-  
-    </footer>
-  </body>
-</html>
+      </section> -->
