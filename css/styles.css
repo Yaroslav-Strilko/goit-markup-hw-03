@@ -78,7 +78,7 @@ body {
   padding-left: 215px;
 }
 .section-standard {
-    margin-top: 94px;
+    /* margin-top: 94px; */
     }
 
   /* ==========HEADER================== */
@@ -250,7 +250,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .item-our-advant {
   display: flex;
@@ -349,7 +349,7 @@ display: flex;
 }
 
 .client list{
-  margin-bottom: 94px;
+ 
 }
 
 .client-link:hover,
