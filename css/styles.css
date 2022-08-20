@@ -65,15 +65,15 @@ body {
 /* =============приховуємо заголовки============= */
 .visually-hidden {
   position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 /* ==========COMPONENTS================== */
 /* Задаємо основні параметри контейнеру */
@@ -297,7 +297,6 @@ body {
   background-color: var(--background-color-grey);
 }
 
-
 .employee {
   background-color: var(--white);
   height: 428px;
@@ -404,9 +403,9 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-padding-top: 60px;
-padding-bottom: 60px;
-  
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-background-color);
 }
 .logo-footer {
@@ -414,7 +413,6 @@ padding-bottom: 60px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  
 }
 /*  */
 .footer-contact,
@@ -453,9 +451,8 @@ padding-bottom: 60px;
   padding: 0;
   list-style: none;
 }
-.work-portfolio-img{
-  flex-basis: calc((100%-60)/3);
-
+.work-portfolio-img {
+  flex-basis: calc((100%-60) / 3);
 }
 /* Кнопка */
 .portfolio-button:hover,
