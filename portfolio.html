@@ -16,42 +16,47 @@
 <body>
        <body class="page">
         <!-- Шапка сайту-->
-    <header class="page-header">
-      <nav class="page-navigation">
-        <a href="https://yaroslav-strilko.github.io/goit-markup-hw-02-1/index.html" class="logo link">
-          <span style="color: #2196f3">Web</span><span style="color: #000000">Studio</span>
-        </a>
-        <ul class="menu list">
-          <li class="menu-item">
-            <a class="menu-link link" href="https://yaroslav-strilko.github.io/goit-markup-hw-02-1/index.html">Студія</a>
+    <header>
+      <div class="container page-header-container">
+        <div class="page-navigation">
+          <nav>
+            <a href="" class="logo link">
+              <span style="color: #2196f3">Web</span
+              ><span style="color: #000000">Studio</span>
+            </a>
+          </nav>
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href="">Студія</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="contact list">
+          <li class="contact-item contact-item-first">
+            <a class="contact-email link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
           </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="">Контакти</a>
+          <li class="contact-item">
+            <a class="contact-phone-number link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="contact list">
-        <li>
-          <a class="contact-email link" href="mailto:info@devstudio.com">
-            info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="contact-phone-number link" href="tel:+380961111111">
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
-  
   <!-- Головна частина-->
     <main>
        <h1 hidden>Наші роботи</h1>
-      <section class="portfolio_cat" ></section>
+      <section class=" portfolio_cat container" >
       <!-- Додаткове меню (категорії робіт)-->
-             <ul class="list"><li>
+             <ul class="list menu-portfolio "><li>
         <button type="button" class="portfolio-button portfolio-button-text">
           Усі
         </button></li>
@@ -76,17 +81,17 @@
      
  <!-- Наші роботі-->
       
-       
+      
              
-        <ul class="list">
+        <ul class="list work-portfolio">
           <li>
             <img
               src="./images/portfolio_1.jpg"
               alt="Технокряк "
               width="370"
             />
-            <h2 class="portfolio_title">Технокряк</h2>
-            <p>Веб-сайт</p>
+            <h2 class="portfolio-title">Технокряк</h2>
+            <p class="portfolio-work-cat">Веб-сайт</p>
           </li>
           <li>
             <img
@@ -94,7 +99,7 @@
               alt="Постерьз двома баскетболістами "
               width="370"
             />
-            <h2 class="portfolio_title">Постер New Orlean vs Golden Star</h2>
+            <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
             <p>Дизайн</p>
           </li><li>
             <img
@@ -102,8 +107,8 @@
               alt="Розроблений додаток для ресторану "
               width="370"
             />
-            <h2 class="portfolio_title">Ресторан Seafood</h2>
-            <p>Додаток</p>
+            <h2 class="portfolio-title">Ресторан Seafood</h2>
+            <p class="portfolio-work-cat">Додаток</p>
           </li>
           <li>
             <img
@@ -112,15 +117,15 @@
               width="370"
             />
             <h2 class="portfolio_title">Проєкт Prime</h2>
-            <p>Маркетинг</p>
+            <p class="portfolio-work-cat">Маркетинг</p>
           </li><li>
             <img
               src="./images/portfolio_5.jpg"
               alt="зображені дві коробки "
               width="370"
             />
-            <h2 class="portfolio_title">Проєкт Boxes</h2>
-            <p>Додаток</p>
+            <h2 class="portfolio-title">Проєкт Boxes</h2>
+            <p class="portfolio-work-cat">Додаток</p>
           </li><li>
             <img
               src="./images/portfolio_6.jpg"
@@ -128,31 +133,31 @@
               width="370"
             />
             <h2 class="portfolio_title">Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+            <p class="portfolio-work-cat">Веб-сайт</p>
           </li><li>
             <img
               src="./images/portfolio_7.jpg"
               alt="Зображена книжка"
               width="370"
             />
-            <h2 class="portfolio_title">ТВидання Limited Edition</h2>
-            <p>Дизайн</p>
+            <h2 class="portfolio-title">ТВидання Limited Edition</h2>
+            <p class="portfolio-work-cat">Дизайн</p>
           </li><li>
             <img
               src="./images/portfolio_8.jpg"
               alt="Зображенно цінник з літерами LAB "
               width="370"
             />
-            <h2 class="portfolio_title">Проєкт LAB</h2>
-            <p>Маркетинг</p>
+            <h2 class="portfolio-title">Проєкт LAB</h2>
+            <p class="portfolio-work-cat">Маркетинг</p>
           </li><li>
             <img
               src="./images/portfolio_9.jpg"
               alt="Зображено ноутбук за яким працюють "
               width="370"
             />
-            <h2 class="portfolio_title">Growing Business</h2>
-            <p class="portfolio_cat">Маркетинг</p>
+            <h2 class="portfolio-title">Growing Business</h2>
+            <p class="portfolio-work-cat">Маркетинг</p>
           </li>
         </ul>
       </section>
@@ -160,14 +165,17 @@
     </main>
     
    <!-- Підвал сайту-->
-    <footer class="footer">
-      <p>
-        <a href="/" class="logo link">
-          <span style="color: #2196f3">Web</span><span style="color: #ffffff">Studio</span>
+    <footer class="footer container">
+      
+      <p class="logo-footer">
+        <a href="/" class="logo-footer link">
+          <span style="color: #2196f3">Web</span
+          ><span style="color: #ffffff">Studio</span>
         </a>
       </p>
 
       <!-- Контакти-->
+     
       <address class="address">
         <ul class="list">
           <li>
@@ -190,6 +198,7 @@
           </li>
         </ul>
       </address>
+  
     </footer>
 </body>
 </html>

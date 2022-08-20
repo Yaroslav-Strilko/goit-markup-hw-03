@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uK">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio Ефективні рішення для вашого бізнесу.</title>
@@ -11,161 +11,290 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
     <!-- Шапка сайту-->
-    <header class="page-header">
-      <nav class="page-navigation">
-        <a href="" class="logo link">
-          <span style="color: #2196f3">Web</span
-          ><span style="color: #000000">Studio</span>
-        </a>
-        <ul class="menu list">
-          <li class="menu-item">
-            <a class="menu-link link" href="">Студія</a>
+    <header>
+      <div class="container page-header-container">
+        <div class="page-navigation">
+          <nav>
+            <a href="" class="logo link">
+              <span style="color: #2196f3">Web</span
+              ><span style="color: #000000">Studio</span>
+            </a>
+          </nav>
+          <ul class="menu list">
+            <li class="menu-item">
+              <a class="menu-link link" href="">Студія</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="contact list">
+          <li class="contact-item contact-item-first">
+            <a class="contact-email link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
           </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="">Контакти</a>
+          <li class="contact-item">
+            <a class="contact-phone-number link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="contact list">
-        <li>
-          <a class="contact-email link" href="mailto:info@devstudio.com">
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="contact-phone-number link" href="tel:+380961111111">
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- Головна частина-->
     <main>
       <!-- Ефективні рішення-->
-      <section class="main-section">
-        <h1 class="title-first">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button button-text">
-          Замовити послугу
-        </button>
+      <section>
+        <div class="container main-section">
+          <h1 class="title-first">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button button-text">
+            Замовити послугу
+          </button>
+        </div>
       </section>
-      <section class="section">
+      <section class="section-standard">
         <h2 hidden>Наші переваги</h2>
-        <ul class="list section-text">
-          <li>
-            <h3 class="section-title-third">УВАГА дО ДЕТАЛЕЙ</h3>
-            <p>
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-title-third">ПУНКТУАЛЬНІСТЬ</h3>
-            <p>
-              авдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-title-third">ПЛАНУВАННЯ</h3>
-            <p>
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-title-third">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p>
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
-
-        <!-- Чим ми займаємося-->
-
-        <h2 class="section-title-second">Чим ми займаємося</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/img1_1.jpg"
-              alt="Розробка алгоритмів програмування"
-              width="370"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/img1_2.jpg"
-              alt="Розробка для мобільних пристроїв"
-              width="370"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/img1_3.jpg"
-              alt="розробка графічних елементів"
-              width="370"
-            />
-          </li>
-        </ul>
+        <div class="container section-our-advantages">
+          <ul class="list section-text">
+            <li class="content-our-advantages">
+              <p class="bgc-advantages">
+                <img
+                  src="./images/antenna_1.svg"
+                  alt="Зображена супутикова антена"
+                  width="65.32"
+                />
+              </p>
+              <h3 class="section-title-third">УВАГА дО ДЕТАЛЕЙ</h3>
+              <p>
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="content-our-advantages">
+              <p class="bgc-advantages">
+                <img
+                  src="./images/clock_1.svg"
+                  alt="Зображена годинника"
+                  width="65.32"
+                />
+              </p>
+              <h3 class="section-title-third">ПУНКТУАЛЬНІСТЬ</h3>
+              <p>
+                авдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="content-our-advantages">
+              <p class="bgc-advantages">
+                <img
+                  src="./images/diagram_1.svg"
+                  alt="Зображена дыаграма"
+                  width="65.32"
+                />
+              </p>
+              <h3 class="section-title-third">ПЛАНУВАННЯ</h3>
+              <p>
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="content-our-advantages">
+              <p class="bgc-advantages">
+                <img
+                  src="./images/astronaut_1.svg"
+                  alt="Зображений астронавт"
+                  width="65.32"
+                />
+              </p>
+              <h3 class="section-title-third">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p>
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Чим ми займаємося-->
+      <section class="section-standard">
+        <div class="container section-our-work">
+          <h2 class="section-title-second">Чим ми займаємося</h2>
+          <ul class="list list-our-work">
+            <li>
+              <img
+                src="./images/img1_1.jpg"
+                alt="Розробка алгоритмів програмування"
+                width="370"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img1_2.jpg"
+                alt="Розробка для мобільних пристроїв"
+                width="370"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/img1_3.jpg"
+                alt="розробка графічних елементів"
+                width="370"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Наша команда-->
-      <section class="section-our-advant">
-        <h2 class="section-title-second">Наша команда</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/img2_1.jpg"
-              alt="фото Ігор Дем'яненко "
-              width="270"
-            />
-            <h3 class="our-advant">Ігор Дем'яненко</h3>
-            <p class="our-advant-text" lang="en">Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="./images/img2_2.jpg"
-              alt="фото Ольга Рєпіна"
-              width="270"
-            />
-            <h3 class="our-advant">Ольга Рєпіна</h3>
-            <p class="our-advant-text" lang="en">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="./images/img2_3.jpg"
-              alt="фото Микола Тарасов"
-              width="270"
-            />
-            <h3 class="our-advant">Микола Тарасов</h3>
-            <p class="our-advant-text" lang="en">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/img2_4.jpg"
-              alt="фото Михайло Єрмаков"
-              width="270"
-            />
-            <h3 class="our-advant">Михайло Єрмаков</h3>
-            <p class="our-advant-text" lang="en">UI Designer</p>
-          </li>
-        </ul>
+      <section class="section-standard">
+        <div class="container section-our-advant">
+          <h2 class="section-title-second">Наша команда</h2>
+          <ul class="list item-our-advant">
+            <li class="employee">
+              <img
+                src="./images/img2_1.jpg"
+                alt="фото Ігор Дем'яненко "
+                width="270"
+              />
+              <h3 class="our-advant">Ігор Дем'яненко</h3>
+              <p class="our-advant-text" lang="en">Product Designer</p>
+              <ul class="list social-links">
+                <li>
+                  <p class="social-links-content">
+                    <button type="button" class="social-button">
+                      <img
+                        src="./images/Vector_inst.svg"
+                        alt="Інстаграм"
+                        width="20"
+                      />
+                    </button>
+                  </p>
+                </li>
+                <li>
+                  <p class="social-links-content">
+                    <img src="./images/Vector_tw.svg" alt="Твітер" width="20" />
+                  </p>
+                </li>
+
+                <li>
+                  <p class="social-links-content">
+                    <img
+                      src="./images/Vector_f.svg"
+                      alt="Фейсбук"
+                      width="20"
+                      height="20"
+                    />
+                  </p>
+                </li>
+                <li>
+                  <p class="social-links-content">
+                    <img
+                      src="./images/Vector_in.svg"
+                      alt="Інкедін"
+                      width="20"
+                    />
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="employee">
+              <img
+                src="./images/img2_2.jpg"
+                alt="фото Ольга Рєпіна"
+                width="270"
+              />
+              <h3 class="our-advant">Ольга Рєпіна</h3>
+              <p class="our-advant-text" lang="en">Frontend Developer</p>
+            </li>
+            <li class="employee">
+              <img
+                src="./images/img2_3.jpg"
+                alt="фото Микола Тарасов"
+                width="270"
+              />
+              <h3 class="our-advant">Микола Тарасов</h3>
+              <p class="our-advant-text" lang="en">Marketing</p>
+            </li>
+            <li class="employee">
+              <img
+                src="./images/img2_4.jpg"
+                alt="фото Михайло Єрмаков"
+                width="270"
+              />
+              <h3 class="our-advant">Михайло Єрмаков</h3>
+              <p class="our-advant-text" lang="en">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- - Постійні клієнті-->
+      <section class="section-standard">
+        <div class="container section-our-work">
+          <h2 class="section-title-second">Постійні клієнти</h2>
+
+          <ul class="client list">
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_1.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_2.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_3.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_4_b.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_5.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+            <li class="client-item">
+              <a class="client-link link" href=""
+                ><img src="./images/logo_6.svg" alt="Клієнт Union" width=""
+              /></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Підвал сайту-->
-    <footer class="footer">
-      <p>
-        <a href="/" class="logo link">
-          <span style="color: #2196f3">Web</span><span style="color: #ffffff">Studio</span>
+    <footer class="footer container">
+      
+      <p class="logo-footer">
+        <a href="/" class="logo-footer link">
+          <span style="color: #2196f3">Web</span
+          ><span style="color: #ffffff">Studio</span>
         </a>
       </p>
 
       <!-- Контакти-->
+     
       <address class="address">
         <ul class="list">
           <li>
@@ -188,6 +317,7 @@
           </li>
         </ul>
       </address>
+  
     </footer>
   </body>
 </html>
