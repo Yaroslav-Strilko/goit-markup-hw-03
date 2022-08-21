@@ -97,14 +97,16 @@ body {
   }
 
 /* ==========HEADER================== */
-
+.header{
+border: 1px solid #ECECEC;
+}
 .page-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
   background-color: var(--white);
-  border: 1px solid #ECECEC;
+  
 }
 .page-navigation {
   display: flex;
@@ -192,6 +194,7 @@ body {
   background-color: var(--button-color);
 }
 .button-text {
+  padding:   10px  32px 10px 32px ;
   border: 0;
   margin-top: 30px;
   font-family: var(--primary-font);
@@ -239,7 +242,8 @@ body {
 .content-our-advantages {
   display: flex;
   flex-direction: column;
-  flex-basis: calc((100%-90px)/4); 
+  flex-basis: calc((100% - 90px)/4);
+ 
 }
 
 .bgc-advantages {
@@ -265,7 +269,7 @@ body {
 .section-title-second {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.67;
+  line-height: 1.16;
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 50px;
@@ -339,6 +343,7 @@ padding-top: 30px;
 padding-bottom: 30px;
 }
 .our-advant {
+  font-size: 16px;
   margin-bottom: 10px;
   font-weight: 500;
   line-height: 1.19;
@@ -480,7 +485,7 @@ border-bottom: 1px solid #EEEEEE ;
    flex-basis: calc((100%-60px) / 3); */
 }
 .work-portfolio > .work-portfolio-item {
-  flex-basis: calc(100% / 3 -60px);
+  flex-basis: calc((100% - 90px)/3);
   margin-left: 30px;
   margin-top: 30px;
 }
