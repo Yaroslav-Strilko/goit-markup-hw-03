@@ -50,6 +50,8 @@ ol {
 /* Прибираємо відступи картинок у списковіх елементах */
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* При наведені на кнопку зміна курсору */
 button {
@@ -79,21 +81,20 @@ body {
 /* Задаємо основні параметри контейнеру */
 .page {
   background: var(--white: );
-  width: 1600px;
+  
 }
 
 .container {
   width: 1200px;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
 .section-standard {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* margin-top: 94px; */
-}
+  }
 
 /* ==========HEADER================== */
 
@@ -103,7 +104,7 @@ body {
   justify-content: space-between;
   height: 80px;
   background-color: var(--white);
-  border: ;
+  border: 1px solid #ECECEC;
 }
 .page-navigation {
   display: flex;
@@ -163,12 +164,15 @@ body {
 /* ======Ефективні рішення========== */
 
 .main-section {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  padding-top: 200px;
+  padding-bottom: 200px;
   height: 600px;
   background-color: #2f303a;
+
 }
 .title-first {
   width: 696px;
@@ -200,24 +204,33 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  }
+
+  .button-pading{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    margin-right: auto;
+     /* margin: 0 auto; */
+      /* margin: auto; */
+   
 }
 /* ==========Наші переваги================= */
 .section-our-advantages {
-  height: 98px;
+  /* height: 98px;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: stretch;
-  justify-content: baseline;
+  justify-content: baseline; */
 }
 .section-text {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 30px;
   /* justify-content: space-between; */
 
-  width: 1170px;
-  height: 248px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -226,8 +239,7 @@ body {
 .content-our-advantages {
   display: flex;
   flex-direction: column;
-  /* flex-basis: calc((100%-90)/4);  */
-  width: 270px;
+  flex-basis: calc((100%-90px)/4); 
 }
 
 .bgc-advantages {
@@ -264,20 +276,12 @@ body {
   padding-top: 0;
 }
 
-.section-our-work {
-  height: 386px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* margin-bottom: 94px; */
-}
+
 .item-our-advant {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1170px;
-  flex-wrap: wrap;
+   flex-wrap: wrap;
   column-gap: 30px;
 }
 
@@ -289,17 +293,13 @@ body {
 
 /* ============ Наша команда  ==================*/
 .section-our-advant {
-  height: 648px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--background-color-grey);
+   background-color: var(--background-color-grey);
 }
 
 .employee {
+  flex-basis: calc((100% - 90px)/4);
   background-color: var(--white);
-  height: 428px;
+  
 }
 
 .item-our-advant {
@@ -330,8 +330,16 @@ body {
   color: var(--title-color);
   background-color: var(--accent-color);
 }
+
+
+.our-advant-content{
+/* margin-top: 30px;
+margin-bottom: 16px; */
+padding-top: 30px;
+padding-bottom: 30px;
+}
 .our-advant {
-  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   line-height: 1.19;
   text-align: center;
@@ -339,15 +347,13 @@ body {
 }
 
 .our-advant-text {
-  margin-bottom: 16px;
-  margin-top: 10px;
   font-weight: 400;
   line-height: 1.19;
   text-align: center;
 }
 
 /* ====Постійні клієнті===== */
-.client {
+/* .client {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -371,33 +377,20 @@ body {
 .client-link:hover,
 .client-link:focus {
   background: var(--white); /* Цвет фона под ссылкой */
-  color: var(--accent-color); /* Цвет ссылки */
-}
+  /* color: var(--accent-color); /* Цвет ссылки */
+/* }
 .client-link {
   color: var(--title-text-color);
-}
+}  */
 /* -------------------- */
-.portfolio-title {
-  /* margin-top: 20px; */
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-text-color);
-}
-.portfolio-work-cat {
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
-}
-.portfolio_cat {
-  font-weight: 400;
-  line-height: 1.88;
-}
+
 /*  */
 
 .address {
   font-style: normal;
+}
+.footer-list :not(:last-child){
+  margin-bottom: 9px;
 }
 
 .footer {
@@ -405,14 +398,14 @@ body {
   flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
-
-  background-color: var(--footer-background-color);
+    background-color: var(--footer-background-color);
 }
 .logo-footer {
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-bottom: 20px;
 }
 /*  */
 .footer-contact,
@@ -436,32 +429,8 @@ body {
 }
 
 /* Блок портфоліо */
-.menu-portfolio {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  gap: 8px;
-}
-.work-portfolio {
-  display: flex;
-  /* Make a flex container multiline */
-  flex-wrap: wrap;
-  /* Set gap between rows and columns */
-  gap: 30px;
-  padding: 0;
-  list-style: none;
-}
-.work-portfolio-img {
-  flex-basis: calc((100%-60) / 3);
-}
-/* Кнопка */
-.portfolio-button:hover,
-.portfolio-button:focus {
-  color: var(--title-color);
-  background-color: var(--accent-color);
-}
 .portfolio-button-text {
-  padding: 0;
+  padding:   6px  22px 6px 22px ;
   border: 0;
   font-family: var(--primary-font);
   font-style: normal;
@@ -472,4 +441,54 @@ body {
   color: var(--title-text-color);
   background-color: rgba(245, 244, 250, 1);
 }
+
+.menu-portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.work-portfolio-title {
+    font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.work-portfolio-text{
+margin: top 4px; ;
+}
+.work-portfolio-content {
+  padding: 20px 24px 20px 24px ;
+border-left: 1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE ;
+}
+.portfolio_cat {
+  font-weight: 400;
+  line-height: 1.88;
+}
+.work-portfolio {
+  display: flex;
+   flex-wrap: wrap;
+   margin-left: -30px;
+   margin-top: -30px;
+   /*  gap: 30px;
+  padding: 0;
+  list-style: none;
+   flex-basis: calc((100%-60px) / 3); */
+}
+.work-portfolio > .work-portfolio-item {
+  flex-basis: calc(100% / 3 -60px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* Кнопка */
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--title-color);
+  background-color: var(--accent-color);
+}
+
 /* +++++++++++++++++++++++++++ */
